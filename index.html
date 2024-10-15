@@ -324,10 +324,29 @@
 
         <td width="100%" valign="middle">
           <heading>Publications</heading> <br><br>
-        
+
+          <div onmouseover="document.getElementById('agenticir').style.display = 'block';"
+            onmouseout="document.getElementById('agenticir').style.display='none';">
+            <a href="https://arxiv.org/pdf/2410.09713" target="_blank">
+              <papertitle>Agentic Information Retrieval</papertitle>
+            </a><br>
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>,
+            <i>Junwei Liao</i>,
+            Ning Li,
+            Kounianhua Du
+            <br>
+            <a href="https://arxiv.org/abs/2410.09713" target="_blank">arXiv</a> / <a href="https://arxiv.org/html/2410.09713"
+              target="_blank">html</a>
+            <br>
+            <div id="agenticir" style="display:none">
+              In this position paper, we introduce Agentic Information Retrieval (Agentic IR), a novel IR paradigm shaped by the
+              capabilities of LLM agents.
+            </div>
+          </div><br>
+
           <div onmouseover="document.getElementById('hammer').style.display = 'block';"
             onmouseout="document.getElementById('hammer').style.display='none';">
-            <a href="http://arxiv.org/pdf/2410.04587">
+            <a href="http://arxiv.org/pdf/2410.04587" target="_blank">
               <papertitle>Hammer: Robust Function-Calling for On-Device Language Models via Function Masking</papertitle>
             </a><br>
             Qiqiang Lin*,
@@ -341,31 +360,39 @@
             Cheng Cheng,
             Yin Zhao,
             Jun Wang,
-            <a href="https://wnzhang.net/">Weinan Zhang</a>
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>
             <br>
-            <a href="https://arxiv.org/abs/2410.04587">arXiv</a> / <a href="https://github.com/MadeAgents/Hammer">code</a> / <a
-              href="https://arxiv.org/html/2410.04587">html</a> / <a href="https://huggingface.co/MadeAgents">dataset and
+            <a href="https://arxiv.org/abs/2410.04587" target="_blank">arXiv</a> / <a href="https://github.com/MadeAgents/Hammer"
+              target="_blank">code</a> / <a href="https://arxiv.org/html/2410.04587" target="_blank">html</a> / <a
+              href="https://huggingface.co/MadeAgents" target="_blank">dataset and
               models</a>
           </div>
           <div id="hammer" style="display:none">
+            In this paper, we introduce Hammer, a novel family of foundation
+            models specifically engineered for on-device function calling. Hammer employs
+            an augmented dataset that enhances models' sensitivity to irrelevant functions and
+            incorporates function masking techniques to minimize misleading.
           </div><br>
         
           <div onmouseover="document.getElementById('etpo').style.display = 'block';"
             onmouseout="document.getElementById('etpo').style.display='none';">
-            <a href="https://arxiv.org/pdf/2402.06700v4">
+            <a href="https://arxiv.org/pdf/2402.06700v4" target="_blank">
               <papertitle>Entropy-Regularized Token-Level Policy Optimization for Language Agent Reinforcement</papertitle>
             </a><br>
             Muning Wen*,
             <i>Junwei Liao</i>*,
-            <a href="https://www.cdeng.net/">Cheng Deng</a>,
-            <a href="http://www0.cs.ucl.ac.uk/staff/Jun.Wang/">Jun Wang</a>,
-            <a href="https://wnzhang.net/">Weinan Zhang</a>,
-            <a href="https://yingwen.io/">Ying Wen</a>
+            <a href="https://www.cdeng.net/" target="_blank">Cheng Deng</a>,
+            <a href="http://www0.cs.ucl.ac.uk/staff/Jun.Wang/" target="_blank">Jun Wang</a>,
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>,
+            <a href="https://yingwen.io/" target="_blank">Ying Wen</a>
             <br>
-            <a href="https://arxiv.org/abs/2402.06700">arXiv</a> /
-            <a href="https://github.com/morning9393/ETPO">code</a> / <a href="https://arxiv.org/html/2402.06700v4">html</a>
+            <a href="https://arxiv.org/abs/2402.06700" target="_blank">arXiv</a> /
+            <a href="https://github.com/morning9393/ETPO" target="_blank">code</a> / <a href="https://arxiv.org/html/2402.06700v4"
+              target="_blank">html</a>
             <br>
             <div id="etpo" style="display:none">
+              In this paper, we introduce Entropy Regularized Token-level Policy Optimization
+              (ETPO), an entropy-augmented RL method tailored for optimizing LLMs at the token level.
             </div>
           </div><br>
         </td>
