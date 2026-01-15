@@ -190,8 +190,7 @@
                   <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a>
                   and was once a visiting student at
                   <a href="https://www.berkeley.edu/" target="_blank">University of California, Berkeley</a>
-                  2023 Fall. 
-                  I am now doing RA at Shanghai Jiao Tong University and will start my PhD in Fall 2025 here, under the supervision of <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>.
+                  2023 Fall. I am currently a PhD student at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> under the supervision of <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>.
                 </p>
                 </p>
                 <p>
@@ -204,8 +203,9 @@
                   <!-- <a href="http://ai.stanford.edu/~cbfinn/bio.txt">Bio</a> &nbsp;/&nbsp; -->
                   <a href="mailto:jwliao.ai@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=--bwp6YAAAAJ&hl=en" target="_blank"> Google Scholar </a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jwliao-ai" target="_blank"> GitHub </a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/jwliao" target="_blank"> LinkedIn </a>
+                  <a href="https://github.com/jwliao-ai" target="_blank"> GitHub </a>
+                  <!-- <a href="https://github.com/jwliao-ai" target="_blank"> GitHub </a> &nbsp;/&nbsp; -->
+                  <!-- <a href="https://www.linkedin.com/in/jwliao" target="_blank"> LinkedIn </a> -->
                 </p>
               </td>
               <td width="33%">
@@ -218,7 +218,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
 
-            <tr>
+            <!-- <tr>
               <td>
                 <heading>News</heading>
                 <ul>
@@ -228,7 +228,7 @@
                   </li>
                 </ul>
               </td>
-            </tr>
+            </tr> -->
 
             <tr>
               <td>
@@ -250,7 +250,7 @@
               <td>
                 <heading>Research Experience</heading>
                 <ul>
-                  <li><b>May. 2024 ~ Present</b>: RA at
+                  <li><b>May. 2024 ~ Sep. 2025</b>: RA at
                     <a href="http://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
                     advised by
                     <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>.
@@ -376,6 +376,40 @@
 
         <tr><td width="100%" valign="middle">
           <heading>Preprints</heading> <br><br>
+
+          <div onmouseover="document.getElementById('mem-rl').style.display = 'block';"
+            onmouseout="document.getElementById('mem-rl').style.display='none';">
+            <a href="https://arxiv.org/abs/2504.16736" target="_blank">
+              <papertitle>MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory</papertitle>
+            </a><br>
+            Shengtao Zhang, 
+            Jiaqian Wang, 
+            Ruiwen Zhou, 
+            <b>Junwei Liao</b>, 
+            Yuchen Feng, 
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>, 
+            <a href="https://yingwen.io/" target="_blank">Ying Wen</a>, 
+            Zhiyu Li, 
+            Feiyu Xiong, 
+            Yutao Qi, 
+            Bo Tang, 
+            Muning Wen
+            <br>
+            <a href="https://arxiv.org/abs/2601.03192" target="_blank">arXiv</a> 
+            <br>
+            <div id="mem-rl" style="display:none">
+              While Large Language Models possess strong reasoning capabilities, they struggle to emulate this self-evolution:
+              fine-tuning is computationally expensive and prone to catastrophic forgetting, while existing memorybased methods 
+              rely on passive semantic matching that often retrieves noise. To address these
+              challenges, we propose MemRL, a framework that enables agents to self-evolve via non-parametric
+              reinforcement learning on episodic memory. MemRL explicitly separates the stable reasoning of
+              a frozen LLM from the plastic, evolving memory. Unlike traditional methods, MemRL employs
+              a Two-Phase Retrieval mechanism that filters candidates by semantic relevance and then selects
+              them based on learned Q-values (utility). These utilities are continuously refined via environmental
+              feedback in an trial-and-error manner, allowing the agent to distinguish high-value strategies from
+              similar noise.
+            </div>
+          </div><br>
 
           <div onmouseover="document.getElementById('agent-protocol-survey').style.display = 'block';"
             onmouseout="document.getElementById('agent-protocol-survey').style.display='none';">
@@ -531,7 +565,7 @@
                 <br>
                 <p align="right">
                   <font size="2">
-                    Last Updated: Jul. 22, 2025
+                    Last Updated: Jan. 15, 2026
                   </font>
                 </p>
                 <p align="right">
