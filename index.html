@@ -341,6 +341,23 @@
         <td width="100%" valign="cent">
           <heading>Publications</heading> <br><br>
 
+          <div onmouseover="document.getElementById('agentic-agi').style.display = 'block';"
+            onmouseout="document.getElementById('agentic-agi').style.display='none';">
+            <a href="https://openreview.net/forum?id=mTCapTG7UH" target="_blank">
+              <papertitle>Position: Agentic AI Is a Foreseeable Pathway to AGI</papertitle>
+            </a><br>
+            <b>Junwei Liao</b>,
+            Shuai Li,
+            Muning Wen,
+            Jun Wang,
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>
+            <br><em>The Forty-Third International Conference on Machine Learning (ICML)</em>, 2026, Position Paper<br>
+            <a href="https://openreview.net/forum?id=mTCapTG7UH" target="_blank">OpenReview</a>
+          </div>
+          <div id="agentic-agi" style="display:none">
+            Is monolithic scaling the only path to AGI? This paper challenges the dogma that purely scaling a single model is enough to achieve universal super-intelligence. Instead, we identify Agentic AI as the necessary evolution for handling complex, real-world task distributions to achieve AGI in the human world. Through concrete theoretical derivations, we contrast the optimization constraints of monolithic learners against the efficiency of Agentic systems, evolving from simple routing mechanisms to general Directed Acyclic Graphs (DAGs) of Agents. We demonstrate that Agentic AI offers superior generalization and efficiency. Finally, we reinterpret the instability of current multi-agent frameworks and call for more future actions on Agentic AI.
+          </div><br>
+
           <div onmouseover="document.getElementById('hammer').style.display = 'block';"
             onmouseout="document.getElementById('hammer').style.display='none';">
             <a href="https://openreview.net/pdf?id=yVQcr4qjD6" target="_blank">
@@ -377,6 +394,31 @@
         <tr><td width="100%" valign="middle">
           <heading>Preprints</heading> <br><br>
 
+          <div onmouseover="document.getElementById('memq').style.display = 'block';"
+            onmouseout="document.getElementById('memq').style.display='none';">
+            <a href="https://arxiv.org/abs/2605.08374" target="_blank">
+              <papertitle>MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs</papertitle>
+            </a><br>
+            <b>Junwei Liao</b>,
+            Haoting Shi,
+            Ruiwen Zhou,
+            Jiaqian Wang,
+            Shengtao Zhang,
+            Wei Zhang,
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>,
+            Ying Wen,
+            Zhiyu Li,
+            Feiyu Xiong,
+            Bo Tang,
+            Muning Wen
+            <br><em>arXiv</em>, 2026<br>
+            <a href="https://arxiv.org/abs/2605.08374" target="_blank">arXiv</a> /
+            <a href="https://github.com/jwliao-ai/MemQ" target="_blank">code</a>
+          </div>
+          <div id="memq" style="display:none">
+            We introduce MemQ, the first provenance-based credit assignment method for episodic memory valuation. MemQ applies TD(λ) eligibility traces to memory Q-values, propagating credit backward through a provenance DAG that records memory retrieval dependencies. We formalize the setting as an Exogenous-Context MDP and achieve the highest success rate across all six benchmarks spanning OS interaction, function calling, code generation, multimodal reasoning, embodied reasoning, and expert-level QA.
+          </div><br>
+
           <div onmouseover="document.getElementById('mem-rl').style.display = 'block';"
             onmouseout="document.getElementById('mem-rl').style.display='none';">
             <a href="https://arxiv.org/abs/2504.16736" target="_blank">
@@ -395,7 +437,8 @@
             Bo Tang, 
             Muning Wen
             <br>
-            <a href="https://arxiv.org/abs/2601.03192" target="_blank">arXiv</a> 
+            <a href="https://arxiv.org/abs/2601.03192" target="_blank">arXiv</a> /
+            <a href="https://github.com/MemTensor/MemRL" target="_blank">code</a>
             <br>
             <div id="mem-rl" style="display:none">
               While Large Language Models possess strong reasoning capabilities, they struggle to emulate this self-evolution:
@@ -431,7 +474,8 @@
             Yong Yu, 
             <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>
             <br>
-            <a href="https://arxiv.org/abs/2504.16736" target="_blank">arXiv</a> 
+            <a href="https://arxiv.org/abs/2504.16736" target="_blank">arXiv</a> /
+            <a href="https://github.com/zoe-yyx/Awesome-AIAgent-Protocol" target="_blank">code</a>
             <br>
             <div id="agent-protocol-survey" style="display:none">
               In this paper, we provide a systematic overview of existing communication protocols for LLM agents. 
@@ -565,7 +609,7 @@
                 <br>
                 <p align="right">
                   <font size="2">
-                    Last Updated: Jan. 15, 2026
+                    Last Updated: May. 12, 2026
                   </font>
                 </p>
                 <p align="right">
