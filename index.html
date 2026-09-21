@@ -101,6 +101,47 @@
     span.highlight {
       background-color: #ffffd0;
     }
+
+    /* Logo grid for internship and research assistant experience. */
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 36px 24px;
+      margin-top: 26px;
+    }
+    .experience-card { text-align: center; color: #666; min-width: 0; }
+    .experience-card:first-child { grid-column: 1 / -1; width: calc((100% - 48px) / 3); }
+    .experience-card h3 { font-size: 17px; line-height: 1.35; margin: 0; min-height: 46px; }
+    .experience-card h3 a { color: #555; }
+    .experience-card h3 a:hover { color: #e37222; }
+    .experience-card p { margin: 5px 0 0; line-height: 1.45; }
+    .experience-card .experience-location { margin-top: 0; color: #777; }
+    .experience-logo { height: 150px; display: flex; align-items: center; justify-content: center; margin: 12px 0; }
+    .experience-logo img { display: block; max-width: 100%; width: 150px; height: 150px; object-fit: contain; }
+    .experience-logo .experience-wordmark { width: 190px; }
+    .experience-logo img[alt="MemTensor logo"] { filter: brightness(0); }
+    .experience-date { font-style: italic; }
+    .experience-card .experience-advisor { font-size: 13px; margin-top: 8px; }
+    .experience-card details { margin-top: 10px; font-size: 13px; line-height: 1.5; }
+    .experience-card summary { cursor: pointer; color: #07889b; }
+    .experience-card details p { font-size: 13px; }
+    @media (max-width: 600px) {
+      .page-shell { width: 100%; table-layout: fixed; }
+      .page-shell table { width: 100%; table-layout: fixed; }
+      .page-shell td { overflow-wrap: break-word; }
+      .profile-table > tbody > tr > td { display: block; width: auto; }
+      .profile-table img { display: block; width: 180px; max-width: 100%; height: auto; margin: 0 auto; }
+      name { font-size: 32px; }
+      .experience-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 18px; }
+      .experience-card:first-child { grid-column: auto; width: auto; }
+      .experience-logo, .experience-logo img { height: 115px; }
+      .experience-logo img { width: 115px; }
+      .experience-card h3 { font-size: 15px; min-height: 42px; }
+      .experience-card p { font-size: 14px; }
+    }
+    @media (max-width: 360px) {
+      .experience-grid { grid-template-columns: 1fr; }
+    }
   </style>
   <link rel="icon" type="image/png" href="https://people.eecs.berkeley.edu/~barron/seal_icon.png">
   <title>Junwei Liao</title>
@@ -173,11 +214,11 @@
 
 </head>
 </div>
-<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+<table class="page-shell" width="800" border="0" align="center" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
       <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table class="profile-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
             <tr>
               <td width="67%" valign="middle">
@@ -257,22 +298,51 @@
 
             <tr>
               <td>
-                <heading>Research Experience</heading>
-                <ul>
-                  <li><b>May. 2024 ~ Sep. 2025</b>: RA at
-                    <a href="http://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
-                    advised by
-                    <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>.
-                  </li>
-                  <p>Focus on Multi-Agent Reinforcement Fine-Tuning, Deep Reinforcement Learning, 
-                    Large Decision/Action Models and Agent Technology.</p>
-                  <li><b>Sep. 2023 ~ Mar. 2024</b>: RA at
-                    <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a>,
-                    advised by
-                    <a href="https://juren1987.github.io/" target="_blank">Ju Ren</a>.
-                  </li>
-                  <p>Focus on Deep Reinforcement Learning and RLHF/RLAIF.</p>
-                </ul>
+                <heading id="intern-experience">Intern Experience</heading>
+                <div class="experience-grid">
+                  <div class="experience-card">
+                    <h3><a href="https://www.memtensor.cn/" target="_blank" rel="noopener">MemTensor</a></h3>
+                    <p class="experience-location">Shanghai, China</p>
+                    <a class="experience-logo" href="https://www.memtensor.cn/" target="_blank" rel="noopener" aria-label="MemTensor website">
+                      <img src="files/experience/memtensor.png" alt="MemTensor logo" class="experience-wordmark">
+                    </a>
+                    <p>Research Intern</p>
+                    <p class="experience-date">May 2026 - Present</p>
+                    <details><summary>Research focus</summary><p>Lead RL post-training for foundation models toward general abilities, including mobile use and computer use.</p></details>
+                  </div>
+                  <div class="experience-card">
+                    <h3><a href="https://www.oppo.com/en/" target="_blank" rel="noopener">OPPO</a></h3>
+                    <p class="experience-location">Shanghai, China</p>
+                    <a class="experience-logo" href="https://www.oppo.com/en/" target="_blank" rel="noopener" aria-label="OPPO website">
+                      <img src="files/experience/oppo.svg" alt="OPPO logo" class="experience-wordmark">
+                    </a>
+                    <p>Research Intern</p>
+                    <p class="experience-date">Jun - Aug 2024<br>Mar - Sep 2025</p>
+                    <details><summary>Research focus</summary><p>Focus on LLM Agents, Multi-Agent Systems, and Reinforcement Learning.</p></details>
+                  </div>
+                  <div class="experience-card">
+                    <h3><a href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener">Shanghai Jiao Tong University</a></h3>
+                    <p class="experience-location">Shanghai, China</p>
+                    <a class="experience-logo" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener" aria-label="Shanghai Jiao Tong University website">
+                      <img src="files/experience/sjtu.png" alt="Shanghai Jiao Tong University logo">
+                    </a>
+                    <p>Research Assistant</p>
+                    <p class="experience-date">May 2024 - Sep 2025</p>
+                    <p class="experience-advisor">Advised by <a href="https://wnzhang.net/" target="_blank" rel="noopener">Weinan Zhang</a></p>
+                    <details><summary>Research focus</summary><p>Focus on Multi-Agent Reinforcement Fine-Tuning, Deep Reinforcement Learning, Large Decision/Action Models, and Agent Technology.</p></details>
+                  </div>
+                  <div class="experience-card">
+                    <h3><a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener">Tsinghua University</a></h3>
+                    <p class="experience-location">Beijing, China</p>
+                    <a class="experience-logo" href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener" aria-label="Tsinghua University website">
+                      <img src="files/experience/tsinghua.png" alt="Tsinghua University logo">
+                    </a>
+                    <p>Research Assistant Intern</p>
+                    <p class="experience-date">Sep 2023 - Mar 2024</p>
+                    <p class="experience-advisor">Advised by <a href="https://juren1987.github.io/" target="_blank" rel="noopener">Ju Ren</a></p>
+                    <details><summary>Research focus</summary><p>Focus on Deep Reinforcement Learning and RLHF/RLAIF.</p></details>
+                  </div>
+                </div>
               </td>
             </tr>
 
