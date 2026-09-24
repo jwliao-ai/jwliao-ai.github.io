@@ -379,6 +379,42 @@
         <td width="100%" valign="cent">
           <heading>Publications</heading> <br><br>
 
+          <div onmouseover="document.getElementById('mem-rl').style.display = 'block';"
+            onmouseout="document.getElementById('mem-rl').style.display='none';">
+            <a href="https://arxiv.org/abs/2601.03192" target="_blank">
+              <papertitle>MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory</papertitle>
+            </a><br>
+            <a href="https://shengtao-zhang-research.zst3205914485.chatgpt.site/" target="_blank" rel="noopener">Shengtao Zhang</a>*,
+            Jiaqian Wang*,
+            <a href="https://skyriver-2000.github.io/" target="_blank" rel="noopener">Ruiwen Zhou</a>,
+            <b>Junwei Liao</b>,
+            Yuchen Feng,
+            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>,
+            <a href="https://yingwen.io/en/" target="_blank">Ying Wen</a>,
+            Zhiyu Li,
+            Feiyu Xiong,
+            Yutao Qi,
+            Bo Tang,
+            <a href="https://scholar.google.com/citations?user=Zt1WFtQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Muning Wen</a>
+            <br><em>Neural Information Processing Systems (NeurIPS)</em>, 2026 <font color="#e37222"><strong>(Poster)</strong></font><br>
+            <a href="https://arxiv.org/abs/2601.03192" target="_blank">arXiv</a> /
+            <a href="https://github.com/MemTensor/MemRL" target="_blank">code</a>
+            <!-- Restore the BibTeX download after replacing memrl.bib with the official NeurIPS OpenReview export. -->
+            <br>
+            <div id="mem-rl" style="display:none">
+              While Large Language Models possess strong reasoning capabilities, they struggle to emulate this self-evolution:
+              fine-tuning is computationally expensive and prone to catastrophic forgetting, while existing memorybased methods
+              rely on passive semantic matching that often retrieves noise. To address these
+              challenges, we propose MemRL, a framework that enables agents to self-evolve via non-parametric
+              reinforcement learning on episodic memory. MemRL explicitly separates the stable reasoning of
+              a frozen LLM from the plastic, evolving memory. Unlike traditional methods, MemRL employs
+              a Two-Phase Retrieval mechanism that filters candidates by semantic relevance and then selects
+              them based on learned Q-values (utility). These utilities are continuously refined via environmental
+              feedback in an trial-and-error manner, allowing the agent to distinguish high-value strategies from
+              similar noise.
+            </div>
+          </div><br>
+
           <div onmouseover="document.getElementById('marft').style.display = 'block';"
             onmouseout="document.getElementById('marft').style.display='none';">
             <a href="https://arxiv.org/abs/2504.16129" target="_blank">
@@ -488,42 +524,6 @@
           </div>
           <div id="memq" style="display:none">
             We introduce MemQ, the first provenance-based credit assignment method for episodic memory valuation. MemQ applies TD(λ) eligibility traces to memory Q-values, propagating credit backward through a provenance DAG that records memory retrieval dependencies. We formalize the setting as an Exogenous-Context MDP and achieve the highest success rate across all six benchmarks spanning OS interaction, function calling, code generation, multimodal reasoning, embodied reasoning, and expert-level QA.
-          </div><br>
-
-          <div onmouseover="document.getElementById('mem-rl').style.display = 'block';"
-            onmouseout="document.getElementById('mem-rl').style.display='none';">
-            <a href="https://arxiv.org/abs/2504.16736" target="_blank">
-              <papertitle>MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory</papertitle>
-            </a><br>
-            <a href="https://shengtao-zhang-research.zst3205914485.chatgpt.site/" target="_blank" rel="noopener">Shengtao Zhang</a>*,
-            Jiaqian Wang*,
-            <a href="https://skyriver-2000.github.io/" target="_blank" rel="noopener">Ruiwen Zhou</a>,
-            <b>Junwei Liao</b>, 
-            Yuchen Feng, 
-            <a href="https://wnzhang.net/" target="_blank">Weinan Zhang</a>, 
-            <a href="https://yingwen.io/en/" target="_blank">Ying Wen</a>,
-            Zhiyu Li, 
-            Feiyu Xiong, 
-            Yutao Qi, 
-            Bo Tang, 
-            <a href="https://scholar.google.com/citations?user=Zt1WFtQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Muning Wen</a>
-            <br>
-            <a href="https://arxiv.org/abs/2601.03192" target="_blank">arXiv</a> /
-            <a href="https://github.com/MemTensor/MemRL" target="_blank">code</a> /
-            <a href="files/bibtex/memrl.bib" download="memrl.bib">BibTeX</a>
-            <br>
-            <div id="mem-rl" style="display:none">
-              While Large Language Models possess strong reasoning capabilities, they struggle to emulate this self-evolution:
-              fine-tuning is computationally expensive and prone to catastrophic forgetting, while existing memorybased methods 
-              rely on passive semantic matching that often retrieves noise. To address these
-              challenges, we propose MemRL, a framework that enables agents to self-evolve via non-parametric
-              reinforcement learning on episodic memory. MemRL explicitly separates the stable reasoning of
-              a frozen LLM from the plastic, evolving memory. Unlike traditional methods, MemRL employs
-              a Two-Phase Retrieval mechanism that filters candidates by semantic relevance and then selects
-              them based on learned Q-values (utility). These utilities are continuously refined via environmental
-              feedback in an trial-and-error manner, allowing the agent to distinguish high-value strategies from
-              similar noise.
-            </div>
           </div><br>
 
           <div onmouseover="document.getElementById('agent-protocol-survey').style.display = 'block';"

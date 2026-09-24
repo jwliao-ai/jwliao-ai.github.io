@@ -13,3 +13,5 @@ MARFT's OpenReview and BibTeX links are commented out in index.html and index.md
 | survey.bib | https://arxiv.org/bibtex/2504.16736 | `d38e0e161ee4ee9563df71efa264779a250b02f76f0dd9dcc6c1afb14a399c7f` |
 | agenticir.bib | https://arxiv.org/bibtex/2410.09713 | `606707a525193f22e3d9e578ee68d217290e7af5c155e8b6a7dd3998fc4772e4` |
 | etpo.bib | https://arxiv.org/bibtex/2402.06700 | `15d91abf278ab2b8fbcf8764de5a453e501bf96400b0540f42a4bd153f7500aa` |
+
+MemRL was accepted to NeurIPS 2026 (Poster), as reported by the user on 2026-09-25. Its old arXiv export is retained only as an archive; the website download is hidden pending the official OpenReview BibTeX. Do not relabel the arXiv export as a conference citation.
