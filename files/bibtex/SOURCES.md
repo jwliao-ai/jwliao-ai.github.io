@@ -4,7 +4,7 @@ Preprints: all downloadable .bib files are byte-for-byte copies of official arXi
 
 Accepted papers use the OpenReview BibTeX supplied by the user on 2026-09-21: position.bib, hammer.bib, and marft.bib. The only normalization removes the chat-rendered Markdown wrapper around URL field values. No citation fields are rewritten.
 
-MARFT's OpenReview and BibTeX links are commented out in index.html and index.md until the DAI decision becomes public. The prepared marft.bib is present for later activation. Use the user-supplied case-sensitive identifier BZEinPEht5. To enable the links, remove the surrounding HTML comment markers.
+The user supplied MARFT's public DAI OpenReview BibTeX on 2026-10-12. It matches the prepared marft.bib exactly; its OpenReview and BibTeX download links are now active in index.html and index.md. Use the case-sensitive identifier BZEinPEht5.
 
 | File | Official export | SHA-256 |
 | --- | --- | --- |
